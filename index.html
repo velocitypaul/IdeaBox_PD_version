@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IdeaBox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="./src/idea.js"></script>
+  </head>
+  <body>
+    <nav class="menu">
+      <h1>IdeaBox</h1>
+      <div class="filter">
+        <p class="filter__heading">Filter Starred Ideas</p>
+        <button class="filter__button">Show Starred Ideas</button>
+      </div>
+    </nav>
+    <main>
+      <form class="entryForm">
+        <br />
+        <label for="entryForm__input--title">New Idea Title</label><br />
+        <input
+          type="text"
+          id="entryForm__input--title"
+          name="entryForm__input--title"
+          required="required"
+        /><br /><br />
+        <label for="entryForm__input--body">New Idea Body</label><br />
+        <input
+          type="text"
+          id="entryForm__input--body"
+          name="entryForm__input--body"
+          required="required"
+        /><br /><br />
+        <button class="entryForm__input--button" disabled>
+          Add New Idea
+        </button>
+      </form>
+      <form class="searchForm">
+        <button class="search__button" type="submit">
+          <img src="images/search.svg" />
+        </button>
+        <label for="search__input"></label>
+        <input
+          type="text"
+          id="search__input"
+          name="search__input"
+          placeholder="Search ideas"
+        />
+      </form>
+      <section class="ideas"></section>
+    </main>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
